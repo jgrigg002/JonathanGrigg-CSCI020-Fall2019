@@ -1,6 +1,6 @@
 // JonathanGrigg
 // 9.13.19
-// Animal question game
+// Animal question game or using loops ifs and switches not witches to guess what fish.
 using System;
 
 class MainClass
@@ -15,7 +15,7 @@ class MainClass
     //test for string iteration
     // for (int i = 0; i < 8; i++ )
     // {
-    //   Console.WriteLine("\n" + i + "\n\n" + animals[i]);
+    //   Console.WriteLine("\n" + i + "\n" + animals[i]);
     // }
     // test loop works succesfully
 
