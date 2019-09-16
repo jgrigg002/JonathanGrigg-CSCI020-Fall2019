@@ -9,7 +9,7 @@ class MainClass
   {
     // Initialize variables
     // use string for storing answers
-    string question ;
+    string question = "no";
     // If statements
     // ask questions and store the asnwers to trigger if statements.
     Console.WriteLine("Are you a bird? \nYes or no?");
