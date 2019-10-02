@@ -1,5 +1,5 @@
 using System;
-class testShit{
+class dynamicArrayTest{
   public static void Main(){
     int i =1;
     Console.Write("How many array locations do you need? ");
