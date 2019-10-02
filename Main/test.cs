@@ -1,24 +1,15 @@
 using System;
 class testShit{
   public static void Main(){
-int i=0, j=0;
-  // while (i <5){
-  //   while (j < 3){
-  //     Console.Write("*");
-  //     j++;
-  //   }
-  //   Console.WriteLine(" ");
-  //   j=0;
-  //   i++;
-  // }
-  for (int count = 1; count < 5 ; count++){
-    i=1;
-    while (i <= count){
-      Console.Write(count);
-      i++;
+    int i =1;
+    i = int.Parse(Console.ReadLine());
+    int [] count = new int [i];
+
+    for (int j = 0; j<i; j++)
+    {
+      count[j]=2;
+      Console.WriteLine("x");
+      Console.WriteLine(count[j]);
     }
-    Console.WriteLine(" ");
-    i=1;
   }
-}
 }
