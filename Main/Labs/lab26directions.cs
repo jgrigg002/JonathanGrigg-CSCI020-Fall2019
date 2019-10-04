@@ -21,12 +21,20 @@ class directionReverse {
     }
     for (int j = 1; j == i; j++ ){
       if (directions[j].Contains("left") || directions[j].Contains("Left")){
-        returnDirections = directions.Replace("left","right";"Left","Right");
+        returnDirections[j] = directions[j].Replace("left","right");
+        returnDirections[j] = directions[j].Replace("Left","Right");
       }
-      else if (directions[j].Contains("right") || directions[j].Contains("Right"))
+      else if (directions[j].Contains("right") || directions[j].Contains("Right")){
+        returnDirections[j] = directions[j].Replace("right","left");
+        returnDirections[j] = directions[j].Replace("Right","Left");
+      }
+      else {
+        returnDirections[j] = directions[j]; 
+      }
     }
     //use while loop to read backwards till i count is 0 minus the last entry
     directions[i] = null;
+    returnDirections[i] = null;
     i--;
     while (i != 1){
       Console.WriteLine(directions[i-1]);
