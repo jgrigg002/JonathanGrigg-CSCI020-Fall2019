@@ -4,9 +4,11 @@
 //uses random or input seed to create a map and then export as an ascii
 
 // create main stuff
-// create a two dimension array based on user input for size of map
-// user input for proportions
-possibly let user input seed that where each value determines what's in map
+// call random number function
+// use random number to fill seed value -seed needs to be defined
+// ask user for map dimensions store in int variables
+// ask for seed value, seed would replace random number stored
+// set each value in map to white whitespace.
 
 // set each value to whitespace
 // function using vectors to change values in map along directions
