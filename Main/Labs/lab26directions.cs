@@ -12,32 +12,38 @@ class directionReverse {
     string[] returnDirections = new string [99];
     //create integer counter for reading location.
     int i = 1;
+    int j = 1;
     //promt user to type in directions pressing enter for everystep till they type Stop
-    Console.WriteLine("please type in your directions. press enter after everystep. \n type stop to repeat directions in reverse.");
+    Console.WriteLine("Please type in your directions.\nPress enter after everystep.\nType stop to have directions read back in reverse.");
     //use while loop set to read the previous entry to test for stop
-    while (directions[i-1] != "stop" && directions[i-1] != "Stop"){
+    while (directions[i-1] != "stop"){
       directions[i] = Console.ReadLine();
+      directions[i] = directions[i].ToLower();
       i++;
     }
-    for (int j = 1; j == i; j++ ){
-      if (directions[j].Contains("left") || directions[j].Contains("Left")){
+    //use for loop to iterate through each line and then use if statements to test for cases.
+    for (j = 1; j < i; j++ ){
+      Console.WriteLine("Loop triggered");
+      if (directions[j].Contains("left")){
+        //next use .Replace to change left to right and visa versa.
         returnDirections[j] = directions[j].Replace("left","right");
-        returnDirections[j] = directions[j].Replace("Left","Right");
+        //Console.WriteLine("Line:"+j+"\nCase1:\n" + returnDirections[j]);
+
       }
-      else if (directions[j].Contains("right") || directions[j].Contains("Right")){
+      else if (directions[j].Contains("right")){
         returnDirections[j] = directions[j].Replace("right","left");
-        returnDirections[j] = directions[j].Replace("Right","Left");
+        //Console.WriteLine("Line:"+j+"\nCase2:\n" + returnDirections[j]);
       }
       else {
-        returnDirections[j] = directions[j]; 
+        returnDirections[j] = directions[j];
+        //Console.WriteLine("Line:"+j+"\nCase3:\n" + returnDirections[j]);
+
       }
     }
     //use while loop to read backwards till i count is 0 minus the last entry
-    directions[i] = null;
-    returnDirections[i] = null;
     i--;
     while (i != 1){
-      Console.WriteLine(directions[i-1]);
+      Console.WriteLine(returnDirections[i-1]);
       i--;
     }
   }
