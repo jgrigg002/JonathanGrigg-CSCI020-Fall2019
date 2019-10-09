@@ -26,8 +26,10 @@ class MeteorTest {
       //inset a loop to read the locations and then parse them into a double array.
       //after the read in test the double's values and then write the string array if true.
       if (sortingDouble[0] >= -40 && sortingDouble[0] <= 50 && sortingDouble[1] >= 40 && sortingDouble[1] >= 135 && sortingDouble[2] >=60){
-        Console.WriteLine(sortingString);
-        writer.WriteLine(sortingString);
+        Console.WriteLine(sortingString[0]);
+        writer.WriteLine("[{0}]", string.Join(", ", sortingString));
+
+
       }
 
       //close the read and write fnctions
