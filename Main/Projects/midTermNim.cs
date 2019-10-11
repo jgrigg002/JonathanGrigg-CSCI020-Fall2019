@@ -53,6 +53,7 @@ class gameOfNim{
                     playerChoice = 0;
                     break;
                   default:
+                    Console.WriteLine("choice does not meet criteria");
                     playerChoice = 4;
                     break;
                   }
@@ -87,6 +88,7 @@ class gameOfNim{
                 playerChoice = 0;
                 break;
                 default:
+                Console.WriteLine("choice does not meet criteria");
                 playerChoice = 3;
                 break;
               }
