@@ -59,7 +59,7 @@ class MainClass{
     string choice;
     int inputA = 0;
     int inputB = 0;
-    EggCarton egg;
+    EggCarton egg = new EggCarton();
 
     Console.WriteLine("create carton default. y or n");
     choice = Console.ReadLine();
